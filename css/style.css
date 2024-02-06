@@ -68,6 +68,12 @@ nav a:hover {
     color: #0065FC;
 }
 
+.in-head {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .presentation h1 {
     font-size: 22px;
     font-weight: 700;
@@ -123,6 +129,71 @@ input::placeholder {
     font-weight: 500;
 }
 
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.filter p {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container-filter {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-filter {
+    height: 50px;
+    border-radius: 25px;
+    border: solid 2px #F2F2F2;
+    background-color: white;
+    padding: 4px 19px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-filter:hover {
+    background-color: #DEEBFF;
+}
+
+.ico-filter {
+    font-size: 18px;
+    padding-right: 12px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 24px;
+    margin-bottom: 35px;
+}
+
+.ico-info {
+
+    border-radius: 100%;
+    border: solid 1px #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 16px;
+    font-weight: 700;
+    width: 24px;
+    height: 24px;
+}
+
+.fa-info {
+    font-size: 14px;
+}
 /****** Section ******/
 
 .section-title {
