@@ -18,16 +18,31 @@ body {
     justify-content: center;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/****** Header ******/
+
 .logo {
     width: 61.09px;
     height: 19px;
 }
 
-header { 
+.logo-nav { 
     display: flex;
     justify-content: space-between;
     height: 79px;
     align-items: center;
+    width: 100%;
 }
 
 nav {
@@ -53,22 +68,24 @@ nav a:hover {
     color: #0065FC;
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+.presentation h1 {
+    font-size: 22px;
+    font-weight: 700;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.presentation p {
+    font-size: 16px;
+    font-weight: 400;
 }
+
+/****** Section ******/
 
 .section-title {
     margin: 0;
     font-size: 22px;
 }
+
+/****** Cartes ******/
 
 .card {
     background-color: white;
