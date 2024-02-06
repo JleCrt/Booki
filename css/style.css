@@ -33,17 +33,22 @@ header {
 nav {
     display: flex;
     gap: 68px;
-    margin-top: -44px; /* A VOIR */
+    align-items:center;
+    justify-content: center;
+    height: 42px;
+    margin-top: -44px;
 }
 
 nav a { 
-    height: 35px;
+    padding-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    font-weight: 400;
+    }
 
 nav a:hover {
+    padding-top: 13px;
     border-top: #0065FC solid 2px;
     color: #0065FC;
 }
