@@ -18,6 +18,36 @@ body {
     justify-content: center;
 }
 
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 68px;
+    margin-top: -44px; /* A VOIR */
+}
+
+nav a { 
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
