@@ -157,6 +157,7 @@ input::placeholder {
     align-items: center;
     font-size: 16px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .btn-filter:hover {
@@ -240,7 +241,7 @@ input::placeholder {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -284,7 +285,7 @@ input::placeholder {
     height: 66px;
     width: auto;
     margin: 0;
-    padding: 0;
+    padding: 5px 5px;
 }
 
 .card-txt-h {
@@ -296,7 +297,6 @@ input::placeholder {
 
 .card-title-h {
     margin: 0;
-    padding-top: 6px;
 }
 
 .card-subtitle-h {
@@ -305,8 +305,10 @@ input::placeholder {
 
 .card-rating-h {
     position: absolute;
-    left: 10px;
-    bottom: -15px;
+    left: 14px;
+    bottom: -2px;
+    word-spacing: -5px;
+    font-size: 18px;
 }
 
 .see-more {
@@ -316,6 +318,7 @@ input::placeholder {
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -358,6 +361,14 @@ input::placeholder {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    word-spacing: -5px;
+}
+
+/****** Activités ******/
+
+#activites {
+    margin: 60px 0 61px 0;
+    padding: 0 30px;
 }
 
 .activities {
@@ -385,11 +396,6 @@ input::placeholder {
 .card-activities h3 {
     background: #FFFFFF;
     padding: 0 12px;
-}
-
-#activites {
-    margin: 60px 0 61px 0;
-    padding: 0 30px;
 }
 
 /****** Footer ******/
