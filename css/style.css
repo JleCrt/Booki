@@ -362,11 +362,11 @@ input::placeholder {
 
 /****** Activités ******/
 
-.activities-marseille {
+/*.activities-marseille {
     display: flex;
     flex-direction: column;
     padding: 35px 30px 30px 30px;
-    width: 1280px;
+    width: 100%;
 }
 
 .activities-title {
@@ -377,8 +377,9 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1280px;
+    width: 100%;
     height: 439px;
+    gap: 30px;
 }
 
 .card-a {
@@ -387,24 +388,52 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     box-shadow: 0 3px 15px #f2f2f2;
-    width: 297px;
-    height: 439px;
-    
+    width: 100%;
 }
 
 .card-a img {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     height: 380px;
-    width: 297px;
+    width: 100%;
+
 }
 
 .card-title-a {
     padding-left: 10px;
+}*/
+
+.activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+.card-activities {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 15px #F2F2F2;
+}
+.card-activities img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.card-activities h3 {
+    background: #FFFFFF;
+    padding: 0 12px;
 }
 
-
-
+#activites {
+    margin: 60px 0 61px 0;
+    padding: 0 30px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
