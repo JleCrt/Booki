@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
 }
 
 :root {
@@ -73,6 +74,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    width: 100%;
 }
 
 .presentation h1 {
@@ -135,11 +137,12 @@ input::placeholder {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
+    width: 100%;
 }
 
 .filter p {
     color: black;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
 }
 
@@ -303,6 +306,7 @@ input::placeholder {
 
 .card-title-h {
     margin: 0;
+    font-size: 16px;
 }
 
 .card-subtitle-h {
@@ -385,6 +389,7 @@ input::placeholder {
     height: 100%;
     gap: 30px;
 }
+
 .card-activities {
     width: 25%;
     height: 100%;
@@ -401,7 +406,9 @@ input::placeholder {
 }
 .card-activities h3 {
     background: #FFFFFF;
-    padding: 0 12px;
+    padding: 0 19px;
+    font-size: 16px;
+    margin: 20px 0 20px 0;
 }
 
 /****** Footer ******/
@@ -415,10 +422,11 @@ footer div {
     width: 33%;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     justify-content: flex-start;
     font-size: 16px;
     line-height: 30px;
+    white-space: nowrap;
 }
  footer p {
     font-weight: 700;
@@ -433,7 +441,14 @@ footer div {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .filter {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -448,14 +463,6 @@ footer div {
 
     .card-h {
         margin: 30px 0 0 0;
-    }
-
-    .card-title-h {
-        font-size: 14px;
-    }
-
-    .card-subtitle-h {
-        font-size: 13px;
     }
 
     .populaires {
@@ -493,6 +500,6 @@ footer div {
 
 /* Small devices (phones, less than 768px) */
 
-@media (max-width: 767.98px) {
+@media  (min-width: 368px) and (max-width: 767.98px) {
     /* ... */
 }
