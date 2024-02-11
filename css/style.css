@@ -533,8 +533,13 @@ footer div {
         width: 100%;
         height: 50%;
         justify-content: space-around;
-        padding-bottom: 10px;
+        gap: 0;
+    }
+
+    nav a {
+        width: 50%;
         border-bottom: #F2F2F2 solid 2px;
+        padding-bottom: 15px;
     }
 
     nav a:hover {
@@ -544,7 +549,8 @@ footer div {
     }   
 
     .in-head {
-        padding: 10px 20px 0 20px;
+        margin: 10px 20px 0 20px;
+        padding: 0;
         width: 100%;
     }
 
@@ -566,6 +572,7 @@ footer div {
         border-radius: 15px;
         width: 49px;
         height: 49px;
+        margin-left: -15px;
     }
 
     .fa-magnifying-glass {
@@ -611,7 +618,18 @@ footer div {
         margin: 20px;
     }
 
+    #activities {
+        width: 100%;
     }
+
+    .activities {
+        flex-direction: column;
+    }
+
+    .card-activities {
+        width: 100%;
+    }
+}
 
     
 
