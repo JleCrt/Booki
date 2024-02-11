@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
 }
 
 :root {
@@ -37,6 +36,10 @@ a {
 .logo {
     width: 61.09px;
     height: 19px;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 .logo-nav { 
@@ -132,6 +135,10 @@ input::placeholder {
     font-weight: 500;
 }
 
+.btn-mobile {
+    display: none;
+}
+
 .filter {
     display: flex;
     align-items: center;
@@ -180,6 +187,7 @@ input::placeholder {
     gap: 10px;
     height: 24px;
     margin-bottom: 35px;
+    width: 100%;
 }
 
 .ico-info {
@@ -441,7 +449,7 @@ footer div {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     .filter {
        display: flex;
@@ -500,6 +508,114 @@ footer div {
 
 /* Small devices (phones, less than 768px) */
 
-@media  (min-width: 368px) and (max-width: 767.98px) {
-    /* ... */
-}
+@media screen and (max-width: 768px) {
+ 
+    .main-container {
+        padding: 0;
+    }   
+
+    .logo-nav {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        width: 62px;
+        height: 20px;
+    }
+
+    nav {
+        width: 100%;
+        height: 50%;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        border-bottom: #F2F2F2 solid 2px;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    /* Trouver la solution de la bordure*/
+    }   
+
+    .in-head {
+        padding: 10px 20px 0 20px;
+        width: 100%;
+    }
+
+    .searchbar {
+        width: 100%;
+    /* Voir comment fondre le tout */
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 15px;
+        width: 49px;
+        height: 49px;
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+        font-size: 16px;
+    }
+
+    .container-filter {
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;}
+    /* Régler le problème de dimensions des boutons */
+
+    .info {
+        /* Vérifier positionnement texte */
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .populaires {
+        margin: 0;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    #hebergements {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .see-more {
+        margin: 20px;
+    }
+
+    }
+
+    
+
+
+
+
+
