@@ -575,14 +575,15 @@ footer div {
 
     .searchbar {
         justify-content: center;
+        width: 100%;
     }
 
     .info p {
         font-size: 15px;
     }
 
-    input {
-        width: 236px;
+    form {
+        width: 70%;
     }
 
     .btn {
@@ -615,8 +616,9 @@ footer div {
     }
     
     .btn-filter {
-        font-size: 14px;
+        font-size: 13px;
         width: calc(50% - 15px);
+        padding-left: 4px;
         
     }
 
@@ -697,7 +699,7 @@ footer div {
     }
 
     .card-rating-h {
-        padding-bottom: 4px;
+        bottom: 2px;
     }
 
     .see-more {
