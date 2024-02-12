@@ -677,6 +677,7 @@ footer div {
         flex-wrap: nowrap;
         flex-grow: none;
         flex-direction: column;
+        gap: 10px;
     }
 
     .card-h {
