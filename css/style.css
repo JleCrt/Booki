@@ -532,7 +532,7 @@ footer div {
     }
 
     nav {
-        width: auto;
+        width: 100%;
         height: 50%;
         justify-content: space-around;
         gap: 0;
@@ -547,18 +547,25 @@ footer div {
     nav a:hover {
         border-top: none;
         border-bottom: #0065FC solid 2px;
-    /* Trouver la solution de la bordure*/
     }   
 
     .in-head {
         margin: 10px 20px 0 20px;
         padding: 0;
         width: auto;
+        gap: 25px;
+    }
+
+    .presentation p {
+        font-size: 15px;
     }
 
     .searchbar {
-        width: 100%;
         justify-content: center;
+    }
+
+    .info p {
+        font-size: 15px;
     }
 
     input {
@@ -587,20 +594,30 @@ footer div {
     }
 
     .container-filter {
-        align-content: flex-start;
+        align-content: center;
         flex-wrap: wrap;
-        justify-content: flex-start;}
-    /* Régler le problème de dimensions des boutons */
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .btn-filter {
+        font-size: 14px;
+        width: calc(50% - 15px);
+    }
 
-    .info {
-        /* Vérifier positionnement texte */
+    .ico-filter {
+        font-size: 14px;
     }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         width: auto;
-        margin: 0 20px;
-        padding: 0;
+        margin: 0;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 20px;
+        border-radius: 0;
     }
 
     .section-title {
@@ -609,6 +626,8 @@ footer div {
 
     .populaires {
         margin: 0;
+        border-radius: 0;
+        padding: 0 20px;
     }
 
     .populaires section {
@@ -632,8 +651,7 @@ footer div {
     #hebergements {
         background-color: white;
         width: 100%;
-        padding: 0;
-        
+        padding: 0 20px;
     }
 
     .title-hebergement {
@@ -644,6 +662,7 @@ footer div {
 
     .hebergement-card {
         width: 100%;
+        flex-direction: column;
     }
 
     .card-h {
@@ -652,6 +671,10 @@ footer div {
 
     .card-h img {
         height: 124px;
+    }
+
+    .card-rating-h {
+        padding-bottom: 4px;
     }
 
     .see-more {
