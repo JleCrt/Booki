@@ -674,7 +674,6 @@ footer div {
 
     .hebergement-card {
         width: 100%;
-        flex-direction: column;
     }
 
     .card-h {
