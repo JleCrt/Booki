@@ -115,7 +115,7 @@ input {
     color: black;
     font-weight: 500;
     font-size: 16px;
-    width: 195px;
+    width: auto;
     height: 49px;
 }
 
@@ -264,6 +264,7 @@ input::placeholder {
 
 .title-hebergement {
     margin: 0;
+    white-space: nowrap;
 }
 
 .hebergement-card {
@@ -510,6 +511,7 @@ footer div {
 
 @media screen and (max-width: 768px) {
  
+
     .main-container {
         padding: 0;
     }   
@@ -530,7 +532,7 @@ footer div {
     }
 
     nav {
-        width: 100%;
+        width: auto;
         height: 50%;
         justify-content: space-around;
         gap: 0;
@@ -551,12 +553,16 @@ footer div {
     .in-head {
         margin: 10px 20px 0 20px;
         padding: 0;
-        width: 100%;
+        width: auto;
     }
 
     .searchbar {
         width: 100%;
-    /* Voir comment fondre le tout */
+        justify-content: center;
+    }
+
+    input {
+        width: 236px;
     }
 
     .btn {
@@ -592,48 +598,104 @@ footer div {
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        width: 100%;
-        padding: 0 20px;
+        width: auto;
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .section-title {
+        font-size: 22px;
     }
 
     .populaires {
         margin: 0;
     }
 
+    .populaires section {
+        padding: 0;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .populaires-cards a {
         width: 100%;
     }
 
+    .populaires-cards img {
+        height: 146px;
+    }
+
     #hebergements {
         background-color: white;
-        padding: 20px;
+        width: 100%;
+        padding: 0;
+        
+    }
+
+    .title-hebergement {
+        font-size: 22px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .hebergement-card {
+        width: 100%;
+    }
+
+    .card-h {
+        margin-top: 20px;
+    }
+
+    .card-h img {
+        height: 124px;
     }
 
     .see-more {
         margin: 20px;
     }
 
-    #activities {
-        width: 100%;
+    #activites {
+        width: auto;
+        margin: 20px 20px 60px 20px;
+        padding: 0;
+    }
+
+    #activites h2 {
+        font-size: 22px;
     }
 
     .activities {
+        width: 100%;
         flex-direction: column;
+        padding: 20px 0 0 0;
+        gap: 20px;
     }
 
     .card-activities {
         width: 100%;
     }
-}
 
+    .card-activities img {
+        height: 140px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    footer div {
+        padding: 0;
+        margin: 0 30px;
+        width: auto;
+    }
     
+    footer p {
+        margin: 16px 0 4px 0;
+    }
 
-
-
-
-
+}
