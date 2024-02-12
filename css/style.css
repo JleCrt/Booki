@@ -681,6 +681,11 @@ footer div {
         margin-top: 20px;
     }
 
+    .card-h a {
+        height: 207px;
+        width: auto;
+    }
+
     .card-h img {
         height: 124px;
     }
