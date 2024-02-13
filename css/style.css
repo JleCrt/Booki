@@ -92,6 +92,7 @@ nav a:hover {
 
 .searchbar {
     display: flex;
+    width: 100%;
 }
 
 .icon-searchbar {
@@ -573,21 +574,21 @@ footer div {
         font-size: 15px;
     }
 
-    .searchbar {
-        justify-content: center;
+    form {
         width: 100%;
     }
 
-    .info p {
-        font-size: 15px;
-    }
-
-    form {
-        width: 70%;
+    .searchbar {
+        justify-content:flex-start;
     }
 
     .btn {
         display: none;
+    }
+
+    input {
+        width: auto;
+        flex-grow: 1;
     }
 
     .btn-mobile {
@@ -606,6 +607,10 @@ footer div {
     .fa-magnifying-glass {
         color: white;
         font-size: 16px;
+    }
+
+    .info p {
+        font-size: 15px;
     }
 
     .container-filter {
