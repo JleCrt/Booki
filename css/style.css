@@ -285,7 +285,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    border: solid 4px white;
+    padding: 4px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 4px;
     margin: 30px 0 0 0;
@@ -685,7 +685,7 @@ footer div {
     .hebergement-card {
         width: 100%;
         flex-wrap: nowrap;
-        flex-grow: none;
+        flex-grow: 0;
         flex-direction: column;
         gap: 0;
     }
